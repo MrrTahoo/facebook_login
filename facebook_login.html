@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook - login or sign up</title>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@700&display=swap" rel="stylesheet">
+    <style>
+        {
+            box-sizing: border-box;
+        }
+        /* Set additional styling options for the columns */
+        
+        .column {
+            float: left;
+        }
+        /* Set width length for the left, right and middle columns */
+        
+        .left {
+            width: 50%;
+        }
+        
+        .right {
+            width: 50%;
+            background-color: #385898;
+            border: none;
+        }
+        
+        .row:after {
+            display: table;
+            clear: both;
+        }
+        
+        body {
+            padding: 0%;
+            margin: 0%;
+        }
+        
+        #heading1 {
+            background-color: #385898;
+            color: rgb(255, 255, 255);
+            font-family: 'Mulish', sans-serif;
+            font-size: 40px;
+            padding-left: 186px;
+            margin: 0%;
+            height: 65px;
+            padding-top: 21px;
+        }
+        
+        #heading2 {
+            font-family: 'Mulish', sans-serif;
+            padding-left: 187px;
+            padding-top: 22px;
+            font-size: 20px;
+            margin-bottom: 0px;
+            line-height: 28px;
+        }
+        
+        #pic1 {
+            background-color: white;
+            padding-left: 193px;
+            padding-top: 10px;
+        }
+        
+        #fox {
+            padding-top: 11px;
+            height: 74px;
+            line-height: 25px;
+            color: white;
+            padding-left: 113px;
+        }
+        
+        #crow {
+            width: 143px;
+        }
+        
+        #bird {
+            width: 143px;
+        }
+        
+        #forgot_account {
+            color: lightblue;
+            font-size: 15px;
+            text-decoration: none;
+        }
+        
+        #first_name {
+            margin-left: 90px;
+            padding: 10px;
+            width: 170px;
+            font-size: 17px;
+            font-family: 'Mulish', sans-serif;
+            border-radius: 6px;
+            border-color: rgb(210, 211, 212);
+        }
+        
+        #sur_name {
+            padding: 10px;
+            width: 169px;
+            margin-left: 11px;
+            font-size: 17px;
+            font-family: 'Mulish', sans-serif;
+            border-radius: 6px;
+            border-color: rgb(210, 211, 212);
+        }
+        
+        #email {
+            margin-left: 90px;
+            margin-top: 11px;
+            width: 376px;
+            padding: 10px;
+            font-size: 17px;
+            font-family: 'Mulish', sans-serif;
+            border-radius: 6px;
+            border-color: rgb(210, 211, 212);
+        }
+        
+        #DOB {
+            margin-top: 0%;
+            margin-bottom: 0%;
+            padding-left: 764px;
+            padding-top: 20px;
+            font-family: 'Mulish', sans-serif;
+            color: rgb(137, 139, 139);
+            ;
+        }
+        
+        #date {
+            margin-left: 765px;
+            font-size: 17px;
+            border-color: rgb(210, 211, 212);
+            font-family: 'Mulish', sans-serif;
+            height: 33px;
+        }
+        
+        #month {
+            font-size: 17px;
+            border-color: rgb(210, 211, 212);
+            font-family: 'Mulish', sans-serif;
+            height: 33px;
+        }
+        
+        #year {
+            font-size: 17px;
+            border-color: rgb(210, 211, 212);
+            font-family: 'Mulish', sans-serif;
+            height: 33px;
+        }
+        
+        #button1 {
+            margin-left: 774px;
+            margin-top: 12px;
+        }
+        
+        .gender {
+            font-size: 19px;
+            padding-left: 7px;
+            padding-right: 20px;
+            font-family: 'Mulish', sans-serif;
+        }
+        
+        #privacy {
+            padding-left: 765px;
+            font-size: 14px;
+            font-family: 'Mulish', sans-serif;
+            color: rgb(137, 139, 139);
+        }
+        
+        #submit {
+            margin-left: 764px;
+            height: 41px;
+            width: 238px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 24px;
+            color: white;
+            border-radius: 6px;
+            background: linear-gradient(#67ae55, #578843);
+            background-color: #69a74e;
+            box-shadow: inset 0 1px 1px #a4e388;
+            border-color: #3b6e22 #3b6e22 #2c5115;
+            cursor: pointer;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+        
+        #lastpara {
+            margin-left: 764px;
+            font-family: 'Mulish', sans-serif;
+        }
+        
+        #para4 {
+            margin-left: 170px;
+            margin-top: 37px;
+            font-family: 'Mulish', sans-serif;
+            font-size: 14px;
+            color: rgb(137, 139, 139)
+        }
+    </style>
+</head>
+
+<body>
+    <div class="row">
+        <div class="column left">
+            <h1 id="heading1">facebook</h1>
+            <h3 id="heading2">Facebook helps you connect and share with the<br> people in your life.</h3>
+            <img src="https://static.xx.fbcdn.net/rsrc.php/v3/yi/r/OBaVg52wtTZ.png" alt="Global Village" id="pic1">
+        </div>
+        <div class="column right">
+            <div class="row">
+                <form action="/page.php" id="fox">
+                    <div class="column left" style="    font-size: 14px;">
+                        Email or phone<br><input type="text" placeholder="" id="crow">
+                    </div>
+                    <div class="column right" style=" margin-left: -112px;    font-size: 14px;;">
+                        Password<br><input type="password" id="bird">
+                        <button style="background-color:#4267b2; height: 22px; color:white; border:1px solid darkblue; border-radius: 2px;    padding-left: 7px;margin-left: 6px;cursor: pointer;"> <b>Log In</b></button><br>
+                        <a href="https://web.facebook.com/login/identify/?ctx=recover&ars=royal_blue_bar" id="forgot_account">Forgotten account?</a>
+                    </div>
+                </form>
+            </div>
+            <h1 id="heading3" style="background-color: white;margin-top: 1px;margin-bottom: 0px;padding-top: 25px;padding-left: 89px;font-family: 'Mulish', sans-serif;    font-size: 37px;">Create an account</h1>
+            <p style="    background-color: white;margin-top: 0px;margin-bottom: 0px;padding-left: 91px;font-size: 18px;;line-height: 45px;font-family: 'Mulish', sans-serif;">It's quick and easy.</p>
+        </div>
+    </div>
+    <input type="text" placeholder="First Name" id="first_name"><input type="text " placeholder="Surname " id="sur_name"><br>
+    <input type="text" placeholder="Mobile number or email address" id="email"><br>
+    <input type="password" placeholder="New password" id="email"><br>
+    <p id="DOB">Date of birth</p><br>
+    <select id="date">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+        <option>6</option>
+        <option>7</option>
+        <option>8</option>
+        <option>9</option>
+        <option>10</option>
+        <option>11</option>
+        <option>12</option>
+        <option>13</option>
+        <option>14</option>
+        <option>15</option>
+        <option>16</option>
+        <option>17</option>
+        <option>18</option>
+        <option>19</option>
+        <option>20</option>
+        <option>21</option>
+        <option>22</option>
+        <option>23</option>
+        <option>24</option>
+        <option>25</option>
+        <option>26</option>
+        <option>27</option>
+        <option>28</option>
+        <option>29</option>
+        <option>30</option>
+        <option>31</option>
+    </select>
+    <select id="month">
+        <option>January</option>
+        <option>Febraury</option>
+        <option>March</option>
+        <option>April</option>
+        <option>May</option>
+        <option>June</option>
+        <option>July</option>
+        <option>August</option>
+        <option>September</option>
+        <option>October</option>
+        <option>November</option>
+        <option>December</option>
+    </select>
+    <select id="year">
+        <option>2000</option>
+        <option>2001</option>
+        <option>2002</option>
+        <option>2003</option>
+        <option>2004</option>
+        <option>2005</option>
+        <option>2006</option>
+        <option>2007</option>
+        <option>2008</option>
+        <option>2009</option>
+        <option>2010</option>
+        <option>2011</option>
+        <option>2012</option>
+        <option>2013</option>
+        <option>2014</option>
+        <option>2015</option>
+        <option>2016</option>
+        <option>2017</option>
+        <option>2018</option>
+        <option>2019</option>
+    </select>
+    <p id="DOB">Gender</p>
+    <input type="radio" name="gender" id="button1"><label class="gender">Female</label></input>
+    <input type="radio" name="gender"><label class="gender">Male</label></input>
+    <input type="radio" name="gender"><label class="gender">Custom</label></input>
+    <p id="privacy">By clicking Sign Up, you agree to our <a href="https://web.facebook.com/legal/terms/update" style="text-decoration: none;">Terms</a><a href="https://web.facebook.com/about/privacy/update" style="text-decoration: none;">,Data policy</a> and<br><a href="https://web.facebook.com/policies/cookies/"
+            style="text-decoration: none;">Cookie policy</a> . You may receive SMS notifications from us and<br> can opt out at any time.</p>
+    <button id="submit">Sign Up</button><br>
+    <p id="lastpara" style=" color: rgb(137, 139, 139);"><a href="https://web.facebook.com/pages/create/?ref_type=registration_form" style="    text-decoration: none;color: rgb(125, 125, 255);">Create a Page </a>for a celebrity, band or business.</p>
+    <p id="para4">Facebook @ 2020</p>
+</body>
+
+</html>
